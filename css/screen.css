@@ -265,7 +265,6 @@ input {
 @media (min-width: 768px) {
   .nav-left {
     width: 50vw;
-    border: 1px dotted red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
