@@ -19,6 +19,18 @@ $inputBgHover: #265a87;
   color: #fff;
 }
 
+h2 {
+  color: $subMenuColorFont;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+h3 {
+  color: $subMenuColorSpan;
+  font-size: .9rem;
+  padding: 10px;
+}
+
 
 body {
   font-family: "Arial";
@@ -102,6 +114,7 @@ input {
     background-color: $subMenuColorBg;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 1px solid $inputBorder;
     h3 {
       color: $subMenuColorFont;
       font-size: 1.7em;
@@ -136,7 +149,29 @@ input {
     }
   }
   .content-wrapper {
-    
+    .tools {
+      background-color: $subMenuColorBg;
+      border-bottom: 1px solid $inputBorder;
+      // height: 140px;
+      // outline: 1px dotted red;
+      .preview {
+        padding: 20px 0;
+        img {
+          display: block;
+          margin: 0 auto;
+          text-align: center;
+          // width: 50%;
+          // height: 50%;
+        }
+        h2 {
+          // outline: 1px solid red;
+          text-align: center;
+        }
+      }
+      .details {
+        // outline: 1px solid blue;
+      }
+    }
   }
 }
 
@@ -257,7 +292,25 @@ input {
       display: none;
     }
   }
-
+  .content-wrapper {
+    .tools {
+      background-color: $subMenuColorBg;
+      border-bottom: 1px solid $inputBorder;
+      height: 140px;
+      outline: 1px dotted red;
+      display: flex;
+      .preview {
+        outline: 1px solid green;
+        img {
+          // width: 50%;
+          // height: 50%;
+        }
+      }
+      .details {
+        outline: 1px solid blue;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
