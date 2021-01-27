@@ -165,6 +165,72 @@ input {
   .content-wrapper .tools .preview h2 {
     text-align: center;
   }
+  .content-wrapper .tools .details .details-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content-wrapper .tools .details .details-wrapper ul:nth-child(2) {
+    border-left: 1px solid #313d4f;
+  }
+  .content-wrapper .tools .details .details-list > li {
+    font-size: 1rem;
+    margin: 10px;
+    color: #fff;
+  }
+  .content-wrapper .tools .details .details-list > li span.fab, .content-wrapper .tools .details .details-list > li span.fas {
+    font-size: 1rem;
+    color: #7f8fa4;
+    margin-right: 1rem;
+  }
+  .content-wrapper .tools .used-colours ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content-wrapper .tools .used-colours ul li {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 3px;
+    margin-left: 2px;
+  }
+  .content-wrapper .tools .used-colours ul li:first-child {
+    background-color: #12cddf;
+  }
+  .content-wrapper .tools .used-colours ul li:nth-child(2) {
+    background-color: #e8f7f7;
+  }
+  .content-wrapper .tools .used-colours ul li:nth-child(3) {
+    background-color: #3d7993;
+  }
+  .content-wrapper .tools .used-colours ul li:nth-child(4) {
+    background-color: #bd9094;
+  }
+  .content-wrapper .tools .used-colours ul li:nth-child(5) {
+    background-color: #c3692c;
+  }
+  .content-wrapper .tools .used-colours ul li:nth-child(6) {
+    background-color: #112725;
+  }
+  .content-wrapper .tools .used-colours ul li:nth-child(7) {
+    background-color: #0f1c1c;
+  }
+  .content-wrapper .tools .used-colours ul li:nth-child(8) {
+    background-color: #00859d;
+  }
+  .content-wrapper .tools .used-colours ul li:nth-child(9) {
+    background-color: #b9e4ea;
+  }
+  .content-wrapper .tools .used-colours ul li:nth-child(10) {
+    background-color: #a9dbeb;
+  }
 }
 
 @media (min-width: 576px) {

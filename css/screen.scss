@@ -29,6 +29,8 @@ h3 {
   color: $subMenuColorSpan;
   font-size: .9rem;
   padding: 10px;
+  // outline: 1px solid red;
+
 }
 
 
@@ -170,6 +172,74 @@ input {
       }
       .details {
         // outline: 1px solid blue;
+        .details-wrapper {
+          display: flex;
+          justify-content: center;
+          ul:nth-child(2){
+            border-left: 1px solid $inputBorder;
+          }
+        }
+        .details-list {
+          // outline: 1px dashed red;
+          & > li {
+            font-size: 1rem;
+            margin: 10px;
+            color: #fff;
+            span.fab, span.fas {
+              font-size: 1rem;
+              color: $subMenuColorSpan;
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+
+      .used-colours {
+        ul{
+          display: flex;
+          justify-content: center;
+          // margin: 10px 0;
+          li {
+            display: block;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 3px;
+            // outline: 1px solid red;
+            margin-left: 2px;
+            &:first-child{
+              background-color: #12cddf;
+            }
+            &:nth-child(2){
+              background-color: #e8f7f7;
+            }
+            &:nth-child(3){
+              background-color: #3d7993;
+            }
+            &:nth-child(4){
+              background-color: #bd9094;
+            }
+            &:nth-child(5){
+              background-color: #c3692c;
+            }
+            &:nth-child(6){
+              background-color: #112725;
+            }
+            &:nth-child(7){
+              background-color: #0f1c1c;
+            }
+            &:nth-child(8){
+              background-color: #00859d;
+            }
+            &:nth-child(9){
+              background-color: #b9e4ea;
+            }
+            &:nth-child(10){
+              background-color: #a9dbeb;
+            }
+            
+
+          }
+        }
       }
     }
   }
