@@ -19,6 +19,22 @@ $inputBgHover: #265a87;
   color: #fff;
 }
 
+.content-section {
+  border: 1px solid $inputBorder;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 95vw;
+  background-color: $subMenuColorBg;
+  img {
+    display: block;
+    width: 250px;
+    height: 160px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+  }
+}
+
 h2 {
   color: $subMenuColorFont;
   font-size: 1rem;
@@ -29,8 +45,14 @@ h3 {
   color: $subMenuColorSpan;
   font-size: .9rem;
   padding: 10px;
-  // outline: 1px solid red;
+}
 
+select, input {
+  outline: none;
+  border: 1px solid $inputBorder;
+  background-color: $inputBg;
+  color: $inputFontColor;
+  border-radius: 3px;
 }
 
 
@@ -48,11 +70,6 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-}
-
-input {
-  outline: none;
-  color: white;
 }
 
 @media (max-width: 576px) {
@@ -158,6 +175,7 @@ input {
       // outline: 1px dotted red;
       .preview {
         padding: 20px 0;
+        // outline: 1px dashed red;
         img {
           display: block;
           margin: 0 auto;
@@ -171,7 +189,6 @@ input {
         }
       }
       .details {
-        // outline: 1px solid blue;
         .details-wrapper {
           display: flex;
           justify-content: center;
@@ -241,9 +258,31 @@ input {
           }
         }
       }
+      .info {
+        .form-row {
+          display: flex;
+          justify-content: start;
+          padding: 10px;
+        }
+          label {
+            display: block;
+            width: 30%;
+            font-size: 1rem;
+            margin: 10px;
+            color: #fff;
+          }
+
+          select {
+            display: block;
+            width: 70%;
+          }
+        }
+      }
+    }
+    .content {
+      background-color: #192432;
     }
   }
-}
 
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
@@ -370,7 +409,7 @@ input {
       outline: 1px dotted red;
       display: flex;
       .preview {
-        outline: 1px solid green;
+        // outline: 1px solid green;
         img {
           // width: 50%;
           // height: 50%;
