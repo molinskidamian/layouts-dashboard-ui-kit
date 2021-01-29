@@ -19,22 +19,6 @@ $inputBgHover: #265a87;
   color: #fff;
 }
 
-.content-section {
-  border: 1px solid $inputBorder;
-  border-radius: 10px;
-  margin: 10px auto;
-  width: 95vw;
-  background-color: $subMenuColorBg;
-  img {
-    display: block;
-    width: 250px;
-    height: 160px;
-    border-radius: 10px;
-    margin: auto;
-    padding: 10px;
-  }
-}
-
 h2 {
   color: $subMenuColorFont;
   font-size: 1rem;
@@ -281,6 +265,63 @@ a {
     }
     .content {
       background-color: #192432;
+    }
+    .content-section {
+      border: 1px solid $inputBorder;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 88vw;
+      background-color: $subMenuColorBg;
+      img {
+        display: block;
+        width: 250px;
+        height: 160px;
+        border-radius: 10px;
+        margin: auto;
+        padding: 10px;
+        padding-bottom: none;
+      }
+      h3 {
+        color: #fff;
+        font-size: 1.1rem;
+      }
+      p{
+        color: $subMenuColorSpan;
+        padding-left: 10px;
+        font-size: .75rem;
+      }
+      ul {
+        display: flex;
+        margin: 10px;
+        li {
+          margin-left: 2px;
+          a:first-child {
+            display: block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: $inputBg;
+            text-align: center;
+            line-height: 32px;
+          }
+
+          a {
+            border: 1px solid $inputBorder;
+          }
+
+          a:link, a:visited {
+            color: $inputFontColor;
+            padding-left: 1px;
+          }
+
+          img {
+            margin: -10px 0 0 -10px; 
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+          }
+        }
+      }
     }
   }
 

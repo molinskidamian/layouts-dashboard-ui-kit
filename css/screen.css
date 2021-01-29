@@ -9,23 +9,6 @@
   color: #fff;
 }
 
-.content-section {
-  border: 1px solid #313d4f;
-  border-radius: 10px;
-  margin: 10px auto;
-  width: 95vw;
-  background-color: #273142;
-}
-
-.content-section img {
-  display: block;
-  width: 250px;
-  height: 160px;
-  border-radius: 10px;
-  margin: auto;
-  padding: 10px;
-}
-
 h2 {
   color: #fff;
   font-size: 1rem;
@@ -273,6 +256,62 @@ a {
   }
   .content {
     background-color: #192432;
+  }
+  .content-section {
+    border: 1px solid #313d4f;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 88vw;
+    background-color: #273142;
+  }
+  .content-section img {
+    display: block;
+    width: 250px;
+    height: 160px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: none;
+  }
+  .content-section h3 {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  .content-section p {
+    color: #7f8fa4;
+    padding-left: 10px;
+    font-size: .75rem;
+  }
+  .content-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
+  }
+  .content-section ul li {
+    margin-left: 2px;
+  }
+  .content-section ul li a:first-child {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #222c3c;
+    text-align: center;
+    line-height: 32px;
+  }
+  .content-section ul li a {
+    border: 1px solid #313d4f;
+  }
+  .content-section ul li a:link, .content-section ul li a:visited {
+    color: #7c8ca5;
+    padding-left: 1px;
+  }
+  .content-section ul li img {
+    margin: -10px 0 0 -10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
   }
 }
 
