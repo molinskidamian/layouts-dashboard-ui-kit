@@ -443,21 +443,83 @@ a {
     }
   }
   .content-wrapper {
+    display: flex;
     .tools {
       background-color: $subMenuColorBg;
-      border-bottom: 1px solid $inputBorder;
-      height: 140px;
-      outline: 1px dotted red;
-      display: flex;
+      border-right: 1px solid $inputBorder;
+      border-top: 1px solid $inputBorder;
+      // outline: 1px dotted red;
+      width: 50vw;
+
       .preview {
-        // outline: 1px solid green;
+        border-top: 1px solid $inputBorder;
+        h2 {
+          text-align: center;
+        }
         img {
+          margin: 0 auto;
+          text-align: center;
+          display: flex;
+          justify-content: center;
           // width: 50%;
           // height: 50%;
         }
       }
       .details {
-        outline: 1px solid blue;
+        border-top: 1px solid $inputBorder;
+        color: #fff;
+        font-size: .8rem;
+        margin: 0 10px;
+        line-height: 1.5rem;
+        .details-wrapper {
+          display: flex;
+          justify-content: center;
+          ul {
+            // outline: 1px dashed red;
+            margin: 20px;
+          }
+          ul:first-child {
+            span {
+              margin-right: 6px;
+              color: $subMenuColorSpan;
+            }
+          }
+          ul:nth-child(2) {
+            padding: 0 20px;
+            border-left: 1px solid $inputBorder;
+          }
+        }
+      }
+      .used-colours {
+        border-top: 1px solid $inputBorder;
+      }
+      .info {
+        border-top: 1px solid $inputBorder;
+        label {
+          color: #fff;
+          font-size: .8rem;
+          margin-right: 20px;
+          line-height: 2.5rem;
+        }
+        .form-row {
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+          // outline: 1px dotted red;
+        }
+        select {
+          display: block;
+          width: 70%;
+          padding: 10px;
+        }
+      }
+    }
+    .content {
+      .content-section {
+        width: 50vw;
+        img {
+          max-width: 250px;
+        }
       }
     }
   }
