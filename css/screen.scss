@@ -447,7 +447,7 @@ a {
     .tools {
       background-color: $subMenuColorBg;
       border-right: 1px solid $inputBorder;
-      border-top: 1px solid $inputBorder;
+      // border-top: 1px solid $inputBorder;
       // outline: 1px dotted red;
       width: 50vw;
 
@@ -515,10 +515,62 @@ a {
       }
     }
     .content {
+      margin: 0 auto;
       .content-section {
-        width: 50vw;
+        border: 1px solid $inputBorder;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 320px;
+        background-color: $subMenuColorBg;
         img {
-          max-width: 250px;
+          display: block;
+          width: 250px;
+          height: 160px;
+          border-radius: 10px;
+          margin: auto;
+          padding: 10px;
+          padding-bottom: none;
+        }
+        h3 {
+          color: #fff;
+          font-size: 1.1rem;
+        }
+        p{
+          color: $subMenuColorSpan;
+          padding-left: 10px;
+          font-size: .75rem;
+        }
+        ul {
+          display: flex;
+          margin: 10px;
+          li {
+            margin-left: 2px;
+            a:first-child {
+              display: block;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              background-color: $inputBg;
+              text-align: center;
+              line-height: 32px;
+            }
+  
+            a {
+              border: 1px solid $inputBorder;
+            }
+  
+            a:link, a:visited {
+              color: $inputFontColor;
+              padding-left: 1px;
+            }
+  
+            img {
+              margin: -10px 0 0 -10px; 
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+            }
+          }
         }
       }
     }
@@ -568,6 +620,29 @@ a {
   justify-content: end;
 }
 
+.content-wrapper {
+  display: flex;
+  .tools {
+    max-width: 320px;
+    .preview {
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;  
+    grid-gap: 10px;
+  }
+  .content-section {
+    max-width: 77vw;
+    max-height: 300px;
+  }
+}
+
 }
 
 // Large devices (desktops, 992px and up)
@@ -615,10 +690,22 @@ a {
       }
     }
   }
+
+  .content-wrapper .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .content-section {
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .content-wrapper .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
